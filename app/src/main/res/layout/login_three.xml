@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/header1">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/footer1"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+
+
+    <!-- 2 insertion of Credentials -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/header">
+
+
+
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/email"
+            android:hint="email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit1"
+            android:hint="@string/your_PasWord_please"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/login"
+
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="#fff9"
+            android:textSize="17dp"
+            android:textStyle="normal"
+
+           android:background="@drawable/greenbutton"
+
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            />
+        <!-- 2 insertion of Credentials ends  here    -->
+
+        <!--  Inside linearLayout itself-->
+        <!-- 3    Link to Registration Screen -->
+
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+
+            android:id="@+id/link_to_register"
+
+            android:text="@string/register_here"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="20dip"
+            android:textSize="20dip"
+            android:gravity="center"/>
+
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:weightSum="3"
+            >
+                <!-- Real time you need not have to copy button png's -->
+
+            <Button
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+
+                android:background="@drawable/googlelog"
+                android:id="@+id/google"
+                android:layout_weight="1"
+                />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facebooklogin"
+                android:id="@+id/facebook"
+                android:layout_weight="1"
+                android:layout_gravity="right" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linkedinlogin"
+                android:id="@+id/linkedin" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

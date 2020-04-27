@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/header1">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:orientation="horizontal"
+        android:background="@drawable/footer1"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+
+    <!-- 2 insertion of Credentials -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/header">
+
+
+
+        <EditText
+            android:padding="10dp"
+
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:hint="your_PassWord_please"
+
+           android:inputType="textPassword"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/login"
+
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#eaefbf"
+            android:textSize="17sp"
+            android:textStyle="italic"
+
+             android:background="@drawable/greenbutton"
+
+            android:gravity="center_vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <!-- 2 insertion of Credentials ends here  -->
+
+</RelativeLayout>

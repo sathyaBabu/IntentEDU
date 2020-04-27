@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <!-- Buttons will get here -->
+        <FrameLayout
+            android:id="@+id/leftFragmentContainer1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff39ff" />
+
+
+        <FrameLayout
+            android:id="@+id/rightFragmentContainer2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffb0ff" />
+
+
+        <FrameLayout
+            android:id="@+id/leftFragmentContainer3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ef042f" />
+
+
+        <FrameLayout
+            android:id="@+id/rightFragmentContainer4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f98996" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <!-- Buttons will get here -->
+        <FrameLayout
+            android:id="@+id/leftFragmentContainer11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F1EBB6" />
+
+
+        <FrameLayout
+            android:id="@+id/rightFragmentContainer12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#C4BA68" />
+
+
+        <FrameLayout
+            android:id="@+id/leftFragmentContainer13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8F8106" />
+
+        <FrameLayout
+            android:id="@+id/rightFragmentContainer14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ECD506" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>
